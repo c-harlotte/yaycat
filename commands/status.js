@@ -6,4 +6,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "status",
+
+  description: "check if bot is online",
 };
