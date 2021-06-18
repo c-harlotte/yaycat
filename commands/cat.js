@@ -22,5 +22,5 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "cat",
-  description: 'get a random cat fact & picture'
+  description: "get a random cat fact & picture",
 };

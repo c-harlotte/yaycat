@@ -17,5 +17,5 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "setgame",
-  description: 'set status'
+  description: "set status",
 };

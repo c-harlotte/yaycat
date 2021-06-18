@@ -1,5 +1,6 @@
 const config = require("../config.json");
 const Discord = require("discord.js");
+const config = require("../config.json");
 
 module.exports.run = async (bot, message, args) => {
   const embed = new Discord.MessageEmbed()
@@ -9,7 +10,8 @@ module.exports.run = async (bot, message, args) => {
     .addField(`Version`, `${config.version}`, true)
     .addField(`Prefix`, `${config.prefix}`, true)
     .addField(`Discord.js Version`, `${Discord.version}`, true)
-    .addField('Node.js version', `${process.version}`, true)
+    .addField("Node.js version", `${process.version}`, true)
+    .addField("Changelog", `${config.changelog}`)
     .setColor(0x157f87)
     .setFooter(`${bot.user.username} v${config.version}`);
   message.channel.send(embed);
@@ -18,5 +20,5 @@ module.exports.run = async (bot, message, args) => {
 module.exports.help = {
   name: "about",
 
-  description: 'get bot info'
+  description: "get bot info",
 };

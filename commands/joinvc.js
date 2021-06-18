@@ -30,5 +30,5 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "joinvc",
-  description: 'join vc'
+  description: "join vc",
 };
