@@ -2,6 +2,6 @@
   "prefix": "-",
   "maintainers": ["454888930408398869"],
   "creator": "charlotte#5555",
-  "version": "0.5",
-  "changelog": "-help has arrived!"
+  "version": "0.6",
+  "changelog": "added commands like softbam, kick and ban"
 }
