@@ -9,6 +9,7 @@ module.exports.run = async (bot, message, args) => {
     .addField(`Version`, `${config.version}`, true)
     .addField(`Prefix`, `${config.prefix}`, true)
     .addField(`Discord.js Version`, `${Discord.version}`, true)
+    .addField('Node.js version', `${process.version}`, true)
     .setColor(0x157f87)
     .setFooter(`${bot.user.username} v${config.version}`);
   message.channel.send(embed);
