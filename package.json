@@ -5,6 +5,7 @@
     "discord.js": "^12.5.3",
     "discordjs-logger": "^2.0.0",
     "dotenv": "^8.2.0",
+    "r2": "^2.0.1",
     "snekfetch": "^4.0.4",
     "uuid": "^8.3.2"
   }
