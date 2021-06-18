@@ -2,12 +2,17 @@ const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-  let messag = message.channel.send("Getting ping...").then((message) => {
+  let m = new MessageEmbed().setDescription("Getting ping..");
+  let messag = message.channel.send({ embed: m }).then((msg) => {
     let pingEmbed = new MessageEmbed()
       .setTitle("Pong!")
-      .setDescription(`**WS ping**\n${bot.ws.ping}ms`);
+      .addField("WS ping", `${bot.ws.ping}ms`)
+      .addField(
+        "Edit delay",
+        `${msg.createdTimestamp - message.createdTimestamp}ms`
+      );
 
-    message.edit({ embed: pingEmbed });
+    msg.edit({ embed: pingEmbed });
   });
 };
 
