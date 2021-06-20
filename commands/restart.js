@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
         .setDescription(`I'll be back in a sec!`)
         .setColor(0xff0000)
 
-    msg.channel.send(embed).then(function(m) {
+    message.channel.send(embed).then(function(m) {
         require('child_process').exec("pm2 restart app", function() {
             bot.destroy();
             process.exit();
