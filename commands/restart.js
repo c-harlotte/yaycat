@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const config = require("../config.json");
 
 module.exports.run = async (bot, message, args) => {
-  if(!config.maintainers.includes(msg.author.id)) return;
+  if (!config.maintainers.includes(message.author.id)) return;
     const embed = new Discord.MessageEmbed()
         .setAuthor('Restarting...', 'https://cdn.discordapp.com/emojis/585682049172635649.gif?v=1')
         .setDescription(`I'll be back in a sec!`)
