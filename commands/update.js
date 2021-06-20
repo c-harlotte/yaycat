@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
         .setColor(0xff0000)
 
     message.channel.send(embed).then(function(m) {
-        require('child_process').exec("./update.sh", function() {
+        require('child_process').exec("git pull && pm2 reload app", function() {
             bot.destroy();
             process.exit();
         });
