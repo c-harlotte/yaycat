@@ -1,7 +1,7 @@
 /**
  * @file src/events/message.ts
  * Handles the message event, and registers the command on load.
- * @author C-HARLOTTE
+ * @author C-HARLOTTE <charlotte@ahegao.agency>
  * @author lambdagg <lambda@jikt.im>
  */
 

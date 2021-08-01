@@ -1,7 +1,7 @@
 /**
  * @file src/commands/about.ts
  * Gathers information about the bot.
- * @author C-HARLOTTE
+ * @author C-HARLOTTE <charlotte@ahegao.agency>
  * @author lambdagg <lambda@jikt.im>
  */
 

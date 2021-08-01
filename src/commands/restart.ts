@@ -1,7 +1,7 @@
 /**
  * @file src/commands/restart.ts
  * Restarts the bot. (maintainers only)
- * @author C-HARLOTTE
+ * @author C-HARLOTTE <charlotte@ahegao.agency>
  * @author lambdagg <lambda@jikt.im>
  */
 

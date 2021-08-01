@@ -1,7 +1,7 @@
 /**
  * @file src/commands/cat.ts
  * Represents the cat command.
- * @author C-HARLOTTE
+ * @author C-HARLOTTE <charlotte@ahegao.agency>
  * @author lambdagg <lambda@jikt.im>
  */
 

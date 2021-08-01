@@ -1,7 +1,7 @@
 /**
  * @file src/commands/help.ts
  * Sends a list of available commands to the sender.
- * @author C-HARLOTTE
+ * @author C-HARLOTTE <charlotte@ahegao.agency>
  * @author lambdagg <lambda@jikt.im>
  */
 

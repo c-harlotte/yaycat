@@ -1,7 +1,7 @@
 /**
  * @file src/commands/status.ts
  * Is the bot online?
- * @author C-HARLOTTE
+ * @author C-HARLOTTE <charlotte@ahegao.agency>
  * @author lambdagg <lambda@jikt.im>
  */
 

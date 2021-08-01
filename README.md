@@ -41,7 +41,7 @@ Alternatively, if you only wish to compile your application one-time and execute
 
 ## Contributors
 
-Initially done in JavaScript by [charlotte](https://github.com/C-HARLOTTE), this bot has been ported to TypeScript by [lambdagg](https://lambdagg.xyz) \<lambda@jikt.im>.
+Initially done in JavaScript by [charlotte](https://github.com/C-HARLOTTE) \<charlotte@ahegao.agency>, this bot has been ported to TypeScript by [lambdagg](https://lambdagg.xyz) \<lambda@jikt.im>.
 
 This project is fully open to contributors, if you wish to edit a functionality you can [fork the repository](./fork), then [create a pull request](./compare) after verifying that your code compiles, and that our linter and writing rules are respected. Otherwise, if you don't have development skills (which is completely understandable, ngl), you can just [create a new issue](./issues/new) and explain what your idea is. We'll make the best to help you and discuss the feature to add it - and, of course, credit you!
 

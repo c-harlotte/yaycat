@@ -1,7 +1,7 @@
 /**
  * @file src/index.ts
  * Creates the Client singleton and registers events from the 'events' folder.
- * @author C-HARLOTTE
+ * @author C-HARLOTTE <charlotte@ahegao.agency>
  * @author lambdagg <lambda@jikt.im>
  */
 

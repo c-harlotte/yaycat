@@ -1,7 +1,7 @@
 /**
  * @file src/commands/topic.ts
  * Changes a channel's topic.
- * @author C-HARLOTTE
+ * @author C-HARLOTTE <charlotte@ahegao.agency>
  * @author lambdagg <lambda@jikt.im>
  */
 

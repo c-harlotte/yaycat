@@ -1,7 +1,7 @@
 /**
  * @file src/commands/ping.ts
  * Sends the current latency of the bot to the sender.
- * @author C-HARLOTTE
+ * @author C-HARLOTTE <charlotte@ahegao.agency>
  * @author lambdagg <lambda@jikt.im>
  */
 
