@@ -1,0 +1,81 @@
+{
+	"command": {
+		"scope": "typescript",
+		"prefix": "cmd",
+		"body": [
+			"import type { Message } from \"discord.js\";",
+			"import type { Client } from \"../Client\";",
+			"import Command from \"./Command\";",
+			"",
+			"export default class extends Command {",
+			"  constructor(client: Client) {",
+			"    super(\"$1\", \"$2\", null, [], client);",
+			"  }",
+			"",
+			"  run(label: string, message: Message, args: string[]): boolean {",
+			"    $4",
+			"    return true;",
+			"  }",
+			"}",
+			""
+		],
+		"description": "..."
+	},
+	"async-command": {
+		"scope": "typescript",
+		"prefix": "ascmd",
+		"body": [
+			"import type { Message } from \"discord.js\";",
+			"import type { Client } from \"../Client\";",
+			"import Command from \"./Command\";",
+			"",
+			"export default class extends Command {",
+			"  constructor(client: Client) {",
+			"    super(\"$1\", \"$2\", null, [], client);",
+			"  }",
+			"",
+			"  async run(label: string, message: Message, args: string[]): Promise<boolean> {",
+			"    $4",
+			"    return true;",
+			"  }",
+			"}",
+			""
+		]
+	},
+	"event": {
+		"scope": "typescript",
+		"prefix": "ev",
+		"body": [
+			"import type { Client } from \"../Client\";",
+			"import { Event } from \"./Event\";",
+			"",
+			"export default class extends Event {",
+			"  constructor(client: Client) {",
+			"    super(client, \"$1\");",
+			"  }",
+			"",
+			"  run(): void {",
+			"    $2",
+			"  }",
+			"}"
+		]
+	},
+	"async-event": {
+		"scope": "typescript",
+		"prefix": "asev",
+		"body": [
+			"import type { Client } from \"../Client\";",
+			"import { Event } from \"./Event\";",
+			"",
+			"export default class extends Event {",
+			"  constructor(client: Client) {",
+			"    super(client, \"$1\");",
+			"  }",
+			"",
+			"  async run(): Promise<void> {",
+			"    $2",
+			"  }",
+			"}"
+		]
+	}
+}
