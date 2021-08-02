@@ -1,8 +1,7 @@
 # Yarn
 yarn.lock
 .yarn/**/*
-!.yarn/releases
-!.yarn/releases/**
+!.yarn/yarn-berry.cjs
 
 # Node modules
 node_modules

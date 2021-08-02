@@ -1,7 +1,7 @@
 /**
  * @file src/commands/setGame.ts
  * Sets the bot's status to something different.
- * @author C-HARLOTTE
+ * @author C-HARLOTTE <charlotte@ahegao.agency>
  * @author lambdagg <lambda@jikt.im>
  */
 

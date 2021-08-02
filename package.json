@@ -4,7 +4,7 @@
   "description": "discord.gg/catstare",
   "main": "bootstrap.cjs",
   "scripts": {
-    "init": "npm install -g yarn && yarn set version berry && yarn",
+    "init": "npm install -g yarn && yarn",
     "clean": "yarn node tools/times.cjs clean 'rm -rf dist/ 2>/dev/null' 'rm -rf ext/ 2>/dev/null'",
     "lint": "npx eslint .",
     "lint:fix": "yarn lint --fix",
