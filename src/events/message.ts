@@ -8,7 +8,7 @@
 import type { Message, TextChannel } from "discord.js";
 import { join } from "path";
 import type { Client } from "../Client";
-import { debug, info } from "../logger";
+import { debug } from "../logger";
 import { errorEmbed } from "../utils/message";
 import { hasPermission } from "../utils/Permission";
 import Event from "./Event";
