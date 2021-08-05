@@ -14,7 +14,10 @@
     "debug": "LOG_LEVEL=debug npx ts-node-transpile-only . --debug",
     "debug:trace": "LOG_LEVEL=trace npx ts-node-transpile-only . --debug"
   },
-  "repository": "https://github.com/C-HARLOTTE/yaycat",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C-HARLOTTE/yaycat.git"
+  },
   "author": "c-harlotte <catstare.wtf>",
   "contributors": [
     "lambdagg <lambda@jikt.im>"
@@ -45,5 +48,9 @@
     "ts-node": "^10.1.0",
     "tsconfig-paths": "^3.10.1",
     "typescript": "^4.3.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/C-HARLOTTE/yaycat/issues"
+  },
+  "homepage": "https://github.com/C-HARLOTTE/yaycat#readme"
 }
