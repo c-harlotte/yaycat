@@ -5,7 +5,9 @@
  * @author lambdagg <lambda@jikt.im>
  */
 
-import { Message, MessageEmbed, PermissionResolvable } from "discord.js";
+import { Message, MessageEmbed, PermissionResolvable, TextChannel } from "discord.js";
+import { error } from "logger";
+import { hasPermission } from "utils/Permission";
 import type { Client } from "../Client";
 import Command from "./Command";
 
@@ -17,19 +19,25 @@ export default class HelpCommand extends Command {
   run(_: string, message: Message): boolean {
     let desc = "";
     this.client.commands.forEach((cmd: Command, index, array) => {
-      if (
-        !(
-          cmd.permission &&
-          ((cmd.permission.toLowerCase() === "owner" &&
-            message.guild.ownerID !== message.author.id) ||
-            !message.member.hasPermission(
-              cmd.permission as PermissionResolvable
-            ))
+      try {
+        if (
+          !hasPermission(
+            this.client,
+            message.member,
+            message.channel as TextChannel,
+            cmd.permission
+          )
         )
-      )
-        desc += `\`${this.client.prefixes[0] || ""}${cmd.name}\` ${
-          cmd.description
-        }\n`;
+          desc += `\`${this.client.prefixes[0] || ""}${cmd.name}\` ${
+            cmd.description
+          }\n`;
+      } catch (ex) {
+        error(
+          `could not get permissions for ${message.author.tag} in ${
+            (message.channel as TextChannel).name
+          }: ${cmd.name}`
+        );
+      }
 
       if (index + 1 === array.length)
         // Wait for the end of the forEach iteration. There must be a better way to do that but eh

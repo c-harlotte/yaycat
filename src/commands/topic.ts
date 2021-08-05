@@ -24,7 +24,13 @@ export default class extends Command {
     if (!(message.channel instanceof TextChannel)) return true;
     await message.channel.setTopic(args.join(" "));
     await message.channel.send(
-      new MessageEmbed().setDescription(`Topic set to ${message.channel.topic}`)
+      new MessageEmbed()
+        .setTitle("Done!")
+        .setDescription(
+          `Topic set to ${message.channel.topic || args.join(" ")}`
+        )
+        .setFooter(`Requested by ${message.author.tag}`)
+        .setTimestamp()
     );
     return true;
   }

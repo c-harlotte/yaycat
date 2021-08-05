@@ -67,7 +67,12 @@ export default class SetGameCommand extends Command {
     await message.channel.send(
       new MessageEmbed()
         .setTitle("Done!")
-        .setDescription(`New status set:\n${inspect(activity.activities[0])}`)
+        .setDescription(
+          `New status set: ${
+            activity.activities[0]?.type.toLowerCase() || "<?>"
+          }
+            ${activity.activities[0]?.name || "none or unknown"}`
+        )
         .setColor(0x00ff00)
         .setFooter(
           `Requested by ${message.author.tag}`,
